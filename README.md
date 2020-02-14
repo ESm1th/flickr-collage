@@ -33,9 +33,9 @@ Structure of project:
 ```
 +---flickr_collage
       |   .gitignore
-      |   README.md
       |   .env
       |   requirements.txt
+      |   README.md
       |---collage
             |   main.py
             |   collage.py
@@ -46,3 +46,13 @@ Change derictory to `collage` folder:
 ```
 $ cd collage
 ```
+
+App has some `flags` to customize collage:
+
+**Flag**|**Name**|**Required**|**Default**|**Description**
+--------|--------|------------|-----------|---------------
+`-t`|`--text`|Yes|-|text for searching images
+`-q`|`--quantity`|No|20|quantity of images in collage
+`-r`|`--rows`|No|5|rows of images in collage
+`-c`|`--columns`|No|5|columns of images in collage
+`-s`|`--size`|No|240,180|size of image as "width,height" form
