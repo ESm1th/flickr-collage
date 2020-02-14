@@ -56,3 +56,20 @@ App has some `flags` to customize collage:
 `-r`|`--rows`|No|5|rows of images in collage
 `-c`|`--columns`|No|5|columns of images in collage
 `-s`|`--size`|No|240,180|size of image as "width,height" form
+
+Examples:
+
+Search and fetch 20 images by tag `ninja` and draw collage with 3 rows and 4 columns (only 12 images from fetched 20)
+```
+collage$ python main.py -t ninja -q 20 -r 3 -c 4
+```
+```
+Done! Spent time: 6.0147929191589355
+```
+Search and fetch 50 images by tag `sea` and draw collage with 5 rows and 5 columns (only 25 images from fetched 50)
+```
+collage$ python main.py -t sea -q 50
+```
+```
+Done! Spent time: 19.630441904067993      
+```
