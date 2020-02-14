@@ -13,6 +13,8 @@ METHODS = {
 
 class ImageFetcher:
 
+    """Fetches images from Flickr API."""
+
     endpoint = 'https://www.flickr.com/services/rest/'
     params = {
         'format': 'json',
