@@ -29,6 +29,19 @@ Add `.env` file to project's folder with following variables:
 API_KEY=some_api_key  # key obtained in first step
 ```
 
+Structure of project:
+```
++---flickr_collage
+      |   .gitignore
+      |   README.md
+      |   .env
+      |   requirements.txt
+      |---collage
+      |   main.py
+      |   collage.py
+      |   fetcher.py
+```
+
 Change derictory to `collage` folder:
 ```
 $ cd collage
