@@ -37,9 +37,9 @@ Structure of project:
       |   .env
       |   requirements.txt
       |---collage
-      |   main.py
-      |   collage.py
-      |   fetcher.py
+            |   main.py
+            |   collage.py
+            |   fetcher.py
 ```
 
 Change derictory to `collage` folder:
