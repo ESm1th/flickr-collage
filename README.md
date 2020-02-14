@@ -1,6 +1,8 @@
 # flickr_collage
 Fetch images from flickr API and create collage.
 
+To run this app you should use `python >= 3.7`, because some features of `asyncio` that used in this project appeared in `python 3.7`, therefor app can not work on other `python` versions.
+
 ### How to start
 Create `Flickr` app and obtain `API key` [link](https://www.flickr.com/services/apps/create/apply/)
 
@@ -57,12 +59,13 @@ App has some `flags` to customize collage:
 `-c`|`--columns`|No|5|columns of images in collage
 `-s`|`--size`|No|240,180|size of image as "width,height" form
 
-Examples:
+### Examples:
 
 Search and fetch 20 images by tag `ninja` and draw collage with 3 rows and 4 columns (only 12 images from fetched 20)
 ```
 collage$ python main.py -t ninja -q 20 -r 3 -c 4
 ```
+Result:
 ```
 Done! Spent time: 6.0147929191589355
 ```
@@ -70,6 +73,7 @@ Search and fetch 50 images by tag `sea` and draw collage with 5 rows and 5 colum
 ```
 collage$ python main.py -t sea -q 50
 ```
+Result:
 ```
 Done! Spent time: 19.630441904067993      
 ```
