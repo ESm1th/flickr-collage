@@ -26,7 +26,7 @@ Install dependencies:
 $ pip install -r requirements.txt
 ```
 
-Add `.env` file to project's folder with following variables:
+Add `.env` file to project's folder with following variable:
 ```
 API_KEY=some_api_key  # key obtained in first step
 ```
