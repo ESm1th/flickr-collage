@@ -81,6 +81,9 @@ class Collage:
 
                 if len(columns) == self.columns:
                     rows.append(np.concatenate(columns, axis=1))
+
+                    if len(rows) == self.rows:
+                        break
                     columns = []
 
         collage = np.concatenate(rows, axis=0)

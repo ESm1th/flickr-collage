@@ -1,4 +1,5 @@
 import os
+import time
 import asyncio
 import argparse
 from datetime import datetime
@@ -21,7 +22,7 @@ def create_argument_parser():
         help='text for searching images'
     )
     args_parser.add_argument(
-        '-q', '--quantity', default=100, type=int,
+        '-q', '--quantity', default=20, type=int,
         help='quantity of images for collage'
     )
     args_parser.add_argument(
@@ -117,4 +118,7 @@ if __name__ == '__main__':
     )
     args.update({'title': title})
 
+    start = time.time()
     asyncio.run(main(**args))
+    end = time.time()
+    print('Done! Spent time: {time}'.format(time=end-start))
