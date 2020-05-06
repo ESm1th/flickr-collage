@@ -1,4 +1,4 @@
-# flickr_collage
+# flickr-collage
 Fetch images from flickr API and create collage.
 
 To run this app you should use `python >= 3.7`, because some features of `asyncio` that used in this project appeared in `python 3.7`, therefore app might not work on other `python` versions.
