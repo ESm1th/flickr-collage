@@ -8,7 +8,7 @@ Create `Flickr` app and obtain `API key`  [link](https://www.flickr.com/services
 
 Clone repository:
 ```
-$ git clone https://github.com/ESm1th/flickr_collage.git
+$ git clone https://github.com/ESm1th/flickr-collage.git
 ```
 
 Change working directory to project:
